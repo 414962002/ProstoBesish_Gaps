@@ -4,5 +4,18 @@
 <p align="center">
   <img src="https://github.com/414962002/guess-the-number/blob/main/img/1111.png">  
   <img src="https://github.com/414962002/guess-the-number/blob/main/img/2222.png">  
- 
 </p>
+---  
+<p align="right">
+<b>Contributors</b> </br>
+  <i>
+This project is open source, </br>
+and gets better with the hard work </br>
+and collaboration of multiple people. </br>
+Thanks to the following for their </br>
+contributions:  
+    @BOrekhova  
+    @elintendo  
+  </i>
+</p>
+
