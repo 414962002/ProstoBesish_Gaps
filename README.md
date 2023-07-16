@@ -1,4 +1,4 @@
-<p align="right">
+<p align="left">
 <b>Contributors</b> </br>
   <i>
 This project is open source, </br>
