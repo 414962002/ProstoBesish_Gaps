@@ -22,21 +22,21 @@ function doPost(e) {
       sendText(chatIdCb, `<b>There is your lucky digit -</b>  \n ` + randomNumber);
       sendText(chatIdCb, '<b>Cho-o-o-ze!</b>', keyboard_text);
 
-      SpreadsheetApp.getActiveSheet().getRange('A3').clearContent()();
+      SpreadsheetApp.getActiveSheet().getRange('C2').clearContent()();
 
     } else if (cbData != randomNumber) {
 
-      let monkeY = SpreadsheetApp.getActiveSheet().getRange('A3').getDisplayValue();
+      let monkeY = SpreadsheetApp.getActiveSheet().getRange('C2').getDisplayValue();
       monkeY += "🤨";
       sendText(chatIdCb, `Nope! It's - ${randomNumber} \n  \n You lost ${monkeY} lives`, keyboard_text);
 
       let temp = [cbData, randomNumber];
       SpreadsheetApp.getActiveSheet().getRange('A2:B2').setValues([temp]);
-      SpreadsheetApp.getActiveSheet().getRange('A3').setValue(`${monkeY}`);
+      SpreadsheetApp.getActiveSheet().getRange('C2').setValue(`${monkeY}`);
 
       if (monkeY === "🤨🤨🤨") {
         sendText(chatIdCb, `🤨`, keyboard_lost);
-        SpreadsheetApp.getActiveSheet().getRange('A3').clearContent();
+        SpreadsheetApp.getActiveSheet().getRange('C2').clearContent();
       }
     }
   }
