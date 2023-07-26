@@ -42,5 +42,3 @@ Next, the function checks if the cbData is equal to the randomly generated numbe
 If cbData is not equal to the randomly generated number, the function appends an emoji to the value in cell 'C2' of the spreadsheet and sends a text message indicating that the user lost a life. It also sets the values of cells 'A2:B2' with an array containing cbData and the randomly generated number, and sets the value of cell 'C2' with the updated monkeY value.  
 
 If the monkeY value reaches "🤨🤨🤨", it sends a text message with an emoji and a different keyboard layout, and clears the content of cell 'C2' in the spreadsheet.  
-
-Overall, this code snippet appears to handle incoming requests or events, parse JSON data, generate random numbers, and send text messages with different content based on the received data.  
