@@ -1,3 +1,5 @@
+
+
 <p align="left">
 <b>Contributors</b> </br>
   <i>
@@ -25,3 +27,20 @@ contributions:
 | | -------------- | ------------------- | ----- |  
 |2| 2              | 4                   | 🤨    |  
 ```
+doPost receives an e parameter, which is an event object. The function parses the contents of e.postData as JSON and assigns it to the contents variable.  
+
+The function then generates a random number using the functionGetRandomNumber function, with a range of 1 to 5.  
+
+The function checks if contents has a property called message. If it does, it assigns the ID of the sender to the chatId variable and sends a text message with HTML formatting and a keyboard.  
+
+If contents does not have a message property, the function checks if it has a callback_query property. If it does, it assigns the ID of the callback query to the callback_query_id variable, the data of the callback query to the cbData variable, and the ID of the sender to the chatIdCb variable.  
+
+The function then sends an answer to the callback query with the sendAnswerCallbackQuery function, passing the sender's chat ID, the callback query ID, and a message with the callback data.  
+
+Next, the function checks if the cbData is equal to the randomly generated number. If it is, it sends a text message with an emoji and a message displaying the lucky digit. It also clears the content of cell 'C2' in a Google Sheets spreadsheet.  
+
+If cbData is not equal to the randomly generated number, the function appends an emoji to the value in cell 'C2' of the spreadsheet and sends a text message indicating that the user lost a life. It also sets the values of cells 'A2:B2' with an array containing cbData and the randomly generated number, and sets the value of cell 'C2' with the updated monkeY value.  
+
+If the monkeY value reaches "🤨🤨🤨", it sends a text message with an emoji and a different keyboard layout, and clears the content of cell 'C2' in the spreadsheet.  
+
+Overall, this code snippet appears to handle incoming requests or events, parse JSON data, generate random numbers, and send text messages with different content based on the received data.  
