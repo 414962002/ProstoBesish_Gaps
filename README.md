@@ -7,9 +7,9 @@ This project is open source, </br>
 and gets better with the hard work </br>
 and collaboration of multiple people. </br>
 Thanks to the following for their </br>
-contributions:  
-    @BOrekhova  
-    @elintendo  
+contributions: </br>
+<a href="https://github.com/BOrekhova">@BOrekhova</a>   </br>
+<a href="https://github.com/elintendo">@elintendo</a>  
   </i>
 </p>  
 
@@ -42,3 +42,5 @@ Next, the function checks if the cbData is equal to the randomly generated numbe
 If cbData is not equal to the randomly generated number, the function appends an emoji to the value in cell 'C2' of the spreadsheet and sends a text message indicating that the user lost a life. It also sets the values of cells 'A2:B2' with an array containing cbData and the randomly generated number, and sets the value of cell 'C2' with the updated monkeY value.  
 
 If the monkeY value reaches "🤨🤨🤨", it sends a text message with an emoji and a different keyboard layout, and clears the content of cell 'C2' in the spreadsheet.  
+  
+peace!
