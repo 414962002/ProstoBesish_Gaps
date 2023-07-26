@@ -1,3 +1,9 @@
+/**
+ * Handles the doPost event.
+ *
+ * @param {Object} e - the event object
+ * @return {void}
+ */
 
 function doPost(e) {
 
